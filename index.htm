@@ -1,2 +1,411 @@
-#placeholder file
-Welcome to the Torchbearea Guild! This is merely a placeholder for a fuller sirte under current development...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Torchbearer's Guild</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: #1a1a1a;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            font-weight: 400;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            color: #2d2d2d;
+            margin: 2rem 0 1rem 0;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: #444;
+        }
+        
+        .vision-intro {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #2d2d2d;
+        }
+        
+        .skill-domains {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .skill-domain {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid #4a4a4a;
+        }
+        
+        .skill-domain h4 {
+            color: #1a1a1a;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+        
+        .skill-domain ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .skill-domain li {
+            padding: 0.25rem 0;
+            color: #555;
+        }
+        
+        .skill-domain li:before {
+            content: "→ ";
+            color: #888;
+        }
+        
+        .contact-form {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 6px;
+            margin-top: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #2d2d2d;
+            font-weight: 500;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        button {
+            background: #1a1a1a;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        button:hover {
+            background: #2d2d2d;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .highlight {
+            background: #fff9e6;
+            padding: 1.5rem;
+            border-left: 4px solid #ffa500;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 2rem 1.5rem;
+            }
+            
+            .skill-domains {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>THE TORCHBEARER'S GUILD</h1>
+        <p>Preserving human knowledge and capability for an uncertain future</p>
+    </header>
+
+    <div class="container">
+        <section id="vision">
+            <h2>The Vision</h2>
+            <p class="vision-intro">
+                We stand at a threshold. Automation and artificial intelligence promise abundance beyond historical precedent—a world where material scarcity becomes a relic of the past. But this transformation carries profound risks.
+            </p>
+            <p>
+                As our systems grow more complex and more automated, we become increasingly dependent on technologies few understand and fewer can repair. A single cascading failure—whether technical, economic, or geopolitical—could leave humanity unable to meet its most basic needs.
+            </p>
+            <p>
+                The Torchbearer's Guild exists to maintain the full spectrum of human capability: from the fundamental skills that built civilization to the cutting-edge knowledge shaping its future. We are not nostalgists yearning for simpler times, nor techno-optimists blind to fragility. We are pragmatists who recognize that resilience requires redundancy.
+            </p>
+            
+            <div class="highlight">
+                <strong>Our purpose is threefold:</strong>
+                <p style="margin-top: 1rem;">To preserve essential knowledge and skills that might otherwise be lost to automation and specialization.</p>
+                <p>To provide meaning and purpose in an age of abundance, where traditional markers of contribution may fade.</p>
+                <p>To serve as civilizational insurance—a distributed backup of human capability should our complex systems fail.</p>
+            </div>
+
+            <h3>Beyond the Squeeze</h3>
+            <p>
+                We are entering what some call "the Squeeze"—a turbulent transition period where automation displaces faster than it creates, where economic dislocation breeds political instability, and where the promise of abundance feels distant against present precarity.
+            </p>
+            <p>
+                If we navigate this passage successfully, we arrive at a world where human potential is no longer constrained by scarcity. But success is not guaranteed. The Torchbearer's Guild is built for both scenarios: providing purpose during the transition and resilience beyond it.
+            </p>
+
+            <h3>A Symbiotic Future</h3>
+            <p>
+                We envision a partnership between human capability and artificial intelligence—not competition, but complementarity. As AI systems grow more sophisticated, the value of humans who understand foundational principles, who can work with their hands, who can teach and adapt, only increases.
+            </p>
+            <p>
+                We are the safeguard: the cold storage backup for a digital world, the teachers for the next generation of both humans and AI, the bridge between ancient wisdom and future possibility.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skill Domains</h2>
+            <p>
+                The Guild encompasses the full range of human knowledge, from fire-making to neural network training. We organize this knowledge into broad domains, recognizing that mastery in one often illuminates others.
+            </p>
+            
+            <div class="skill-domains">
+                <div class="skill-domain">
+                    <h4>Foundational Crafts</h4>
+                    <ul>
+                        <li>Fire-making & primitive skills</li>
+                        <li>Carpentry & joinery</li>
+                        <li>Metalworking & forging</li>
+                        <li>Stone & masonry</li>
+                        <li>Textile & fiber arts</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-domain">
+                    <h4>Food & Agriculture</h4>
+                    <ul>
+                        <li>Cultivation & horticulture</li>
+                        <li>Animal husbandry</li>
+                        <li>Food preservation</li>
+                        <li>Fermentation</li>
+                        <li>Butchery & processing</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-domain">
+                    <h4>Engineering & Mechanics</h4>
+                    <ul>
+                        <li>Mechanical systems</li>
+                        <li>Electrical & electronics</li>
+                        <li>Precision machining</li>
+                        <li>Metrology & measurement</li>
+                        <li>Materials science</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-domain">
+                    <h4>Digital & Computational</h4>
+                    <ul>
+                        <li>Programming & algorithms</li>
+                        <li>Machine learning</li>
+                        <li>Systems architecture</li>
+                        <li>Network infrastructure</li>
+                        <li>Data systems</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-domain">
+                    <h4>Medicine & Biology</h4>
+                    <ul>
+                        <li>First aid & emergency care</li>
+                        <li>Herbalism & pharmacology</li>
+                        <li>Anatomy & physiology</li>
+                        <li>Laboratory techniques</li>
+                        <li>Diagnostics</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-domain">
+                    <h4>Knowledge Transmission</h4>
+                    <ul>
+                        <li>Teaching & pedagogy</li>
+                        <li>Technical writing</li>
+                        <li>Documentation</li>
+                        <li>Mentorship</li>
+                        <li>Demonstration & practice</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p style="margin-top: 2rem; font-style: italic; color: #666;">
+                This is not an exhaustive list. The Guild recognizes that all human knowledge has value, and that the boundaries between domains are often artificial. We encourage cross-domain mastery and unexpected combinations.
+            </p>
+        </section>
+
+        <section id="membership">
+            <h2>Membership</h2>
+            <p>
+                The Torchbearer's Guild is in its founding phase. We seek individuals who understand both the promise and peril of our technological moment, who value tangible capability alongside abstract knowledge, and who wish to contribute to something larger than themselves.
+            </p>
+            <p>
+                There are no formal requirements beyond genuine commitment to learning, developing, and demonstrating skills. We welcome the expert machinist and the curious beginner, the career programmer and the weekend woodworker. What matters is the willingness to preserve and transmit human capability.
+            </p>
+
+            <h3>Structure & Progression</h3>
+            <p>
+                We are developing a framework inspired by historical guild systems, adapted for our modern context:
+            </p>
+            <ul style="margin-left: 2rem; color: #444;">
+                <li style="margin: 0.5rem 0;"><strong>Apprentice:</strong> Learning foundational skills under guidance</li>
+                <li style="margin: 0.5rem 0;"><strong>Journeyman:</strong> Demonstrating competence and beginning to teach</li>
+                <li style="margin: 0.5rem 0;"><strong>Master:</strong> Recognized expertise and commitment to knowledge transmission</li>
+            </ul>
+            <p style="margin-top: 1rem;">
+                Progression is earned through demonstrated capability, not time served. Teaching is not optional at higher levels—masters must take apprentices. Knowledge hoarded is knowledge lost.
+            </p>
+
+            <h3>Express Your Interest</h3>
+            <p>
+                If this vision resonates with you, we invite you to reach out. Tell us about your skills, your interests, and why you wish to join. This is a beginning, and early members will help shape what the Guild becomes.
+            </p>
+            
+            <div class="contact-form">
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="skills">Current Skills & Experience</label>
+                        <textarea id="skills" name="skills" placeholder="Tell us what you already know..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interests">Skills You Wish to Develop</label>
+                        <textarea id="interests" name="interests" placeholder="What do you want to learn?"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Why Join the Guild?</label>
+                        <textarea id="message" name="message" placeholder="What draws you to this vision?" required></textarea>
+                    </div>
+                    
+                    <button type="submit">Submit Interest</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                The Torchbearer's Guild emerged from conversations among individuals who recognize both the extraordinary promise and profound fragility of our technological moment. We come from diverse backgrounds—craftspeople and engineers, artists and technologists—united by the conviction that human capability must be preserved and transmitted.
+            </p>
+            <p>
+                We are building something that does not yet fully exist. If you are reading this, you are early. Early enough to help define what this becomes.
+            </p>
+            <p>
+                This is not a business. It is not a social club. It is an attempt to solve a civilizational problem that few yet recognize: What happens when humans no longer need to know how to do things?
+            </p>
+            <p>
+                Our answer: We choose to know anyway. We choose to preserve. We choose to teach. We carry the torch forward.
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 The Torchbearer's Guild. A work in progress.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for any future anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
